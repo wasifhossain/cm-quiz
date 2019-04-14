@@ -19,10 +19,10 @@ module CmQuiz
       tests << Review::LoginUser.new(project_api: project_api).perform
       tests << Review::SignUpUser.new(project_api: project_api).perform
       tests << Review::GetUserInfo.new(project_api: project_api).perform
+      tests << Review::DeleteIdea.new(project_api: project_api).perform
       tests << Review::CreateIdea.new(project_api: project_api).perform
       tests << Review::GetIdeas.new(project_api: project_api).perform
       tests << Review::UpdateIdea.new(project_api: project_api).perform
-      tests << Review::DeleteIdea.new(project_api: project_api).perform
       tests
     end
 
